@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* ==================================================== */
+/* ====================== BASE ======================== */
+/* ==================================================== */
 
 *{
     box-sizing: border-box;
@@ -12,8 +15,17 @@
     font-family: Poppins;
 }
 
-body {
-    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==================================================== */
+/* ============== REUSABLE CSS CLASSES ================ */
+/* ==================================================== */
+
+.container {
+    max-width: 100%;
+    margin-inline: 10rem;
 }
 
 /* ==================================================== */
@@ -22,11 +34,13 @@ body {
 
 .header {
     width: 100%;
+    height: 0;
+    background-color: transparent;
 }
 
 .nav {
     position: inherit;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +55,7 @@ body {
 }
 
 .nav__title {
-    
+    font-size: 2.3rem;
 }
 
 .nav__menu {
@@ -49,33 +63,146 @@ body {
 }
 
 .nav__list {
+    font-size: 1.2rem;
     display: flex;
     font-weight: 600;
     list-style: none;
-    column-gap: 1rem;
+    column-gap: 2.5rem;
 }
 
 .nav__link {
     text-decoration: none;
+    transition: 1s;
+}
+
+.nav__link:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .nav__socialmedia {
+    font-size: 1.2rem;
     column-gap: 10px;
     align-items: center;
 }
 
+.nav__socialmedia i{
+    transition: 1s;
+}
+
+.nav__socialmedia i:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
 
 /* ==================================================== */
 /* ===================== MAIN ========================= */
 /* ==================================================== */
 
+/* ===================== Home ========================= */
+
+.home {
+    background: radial-gradient(rgb(139, 195, 245, 0.1), #1294b8);
+}
+
 .home__container {
     display: flex;
-    margin: 50px;
-    column-gap: 30%;
+    padding-top: 100px;
+    column-gap: 10%;
     justify-content: center;
+    padding-bottom: 100px;
+}
+
+.home__data {
+    margin-top: 150px;
+    text-align: left;
+}
+
+.home__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.home__description {
+    padding-bottom: 1rem;
+}
+
+.newsletter {
+    color: red;
 }
 
 .home__img {
-    width: 500px;
+    width: 750px;
+    flex-wrap: wrap;
+}
+
+/* ===================== Products Features ========================= */
+
+.products__container {
+    padding-top: 2.5rem;
+    background-color: white;
+}
+
+.products__data {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.products__title {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.products__description {
+    font-size: 1.3rem;
+    color: grey;
+    margin-bottom: 50px;
+}
+
+#test {
+    display: flex;
+    align-items: center;
+}
+
+.products__content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 25vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+
+.products__card {
+    background: radial-gradient(rgb(139, 195, 245, 1), #1294b8);
+    width: 425px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    
+    align-items: center;
+    transition: 1s;
+}
+
+.products__card:hover {
+    transform: translateY(-20px);
+}
+
+.products__card i {
+    font-size: 50px;
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.products__card h3 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+}
+
+.products__card p {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
 }
