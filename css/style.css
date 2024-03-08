@@ -6,63 +6,76 @@
 
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    vertical-align: top;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
 }
 
-#wrapper {
+body {
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
-    padding: 0 20%;
 }
 
 /* ==================================================== */
 /* ===================== HEADER ======================= */
 /* ==================================================== */
 
-header {
-    display: flex;
+.header {
+    width: 100%;
 }
 
-header ul {
+.nav {
+    position: inherit;
+    height: 4rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul {
-    justify-content: center;
+.nav__title,
+.nav__link,
+.nav__socialmedia {
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__title {
+    
+}
+
+.nav__menu {
+    display: flex;  
+}
+
+.nav__list {
+    display: flex;
+    font-weight: 600;
     list-style: none;
+    column-gap: 1rem;
 }
 
-header ul li {
-    margin : 20px;
+.nav__link {
+    text-decoration: none;
 }
 
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 30vh;
+.nav__socialmedia {
+    column-gap: 10px;
+    align-items: center;
 }
-
-.card {
-    background: blue;
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-header {
-    position: relative;
-    overflow: hidden;
-}
-
 
 
 /* ==================================================== */
 /* ===================== MAIN ========================= */
 /* ==================================================== */
+
+.home__container {
+    display: flex;
+    margin: 50px;
+    column-gap: 30%;
+    justify-content: center;
+}
+
+.home__img {
+    width: 500px;
+}

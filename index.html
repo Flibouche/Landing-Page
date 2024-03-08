@@ -1,57 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--========================== FAVICON ==========================-->
-    
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!--========================== REMIXICONS =======================-->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
     <!--========================== CSS ==============================-->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Landing Page</title>
 </head>
+
 <body>
-    <div id="wrapper">
 
-        <!--=============================================================-->
-        <!--========================== HEADER ===========================-->
-        <!--=============================================================-->
+    <!--=============================================================-->
+    <!--========================== HEADER ===========================-->
+    <!--=============================================================-->
 
-        <header>
-            <p>
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <h2 class ="nav__title">
                 Kucra
-            </p>
-            <nav>
-                <ul>
-                    <li><a href="" style="color:black">HOME</a></li>
-                    <li><a href="" style="color:black">FEATURES</a></li>
-                    <li><a href="" style="color:black">CLIENT</a></li>
-                    <li><a href="" style="color:black">PRICING</a></li>
-                    <li><a href="" style="color:black">FAQ</a></li>
-                    <li><a href="" style="color:black">ABOUT</a></li>
-                    <li><a href="" style="color:black">BLOG</a></li>
-                    <li><a href="" style="color:black">CONTACT</a></li>
+            </h2>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">FEATURES</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#client" class="nav__link">CLIENT</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">PRICING</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">ABOUT</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">BLOG</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">CONTACT</a>
+                    </li>
                 </ul>
-            </nav>
-            <p>
-                futurs logos
-            </p>
-        </header>
+            </div>
 
-        <!--=============================================================-->
-        <!--========================== MAIN =============================-->
-        <!--=============================================================-->
+            <div class="nav__socialmedia">
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </nav>
+    </header>
 
+    <!--=============================================================-->
+    <!--========================== MAIN =============================-->
+    <!--=============================================================-->
 
-        <main class="main">
-            <p>Ici c'est le main !</p>
-            <h1>We are StartUp Creative Kucra Agency</h1>
-            <p>Carefully crafter after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
+    <main class="main">
+
+        <!--========================== Home =============================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        We are StartUp <br>
+                        Creative Kucra <br>
+                        Agency
+                    </h1>
+
+                    <p class="home__description">
+                        Carefully crafter after analysing the needs of<br>
+                        different industries and the design achieves a<br>
+                        great balance between purpose & presentation
+                    </p>
+
+                    <div class="home__newsletter">
+                        <a href="#" class="newsletter">
+                            <input type="text" placeholder="Enter your email" name="email" required>
+                            <span>
+                                SUBSCRIBE
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="img/illustration.svg" alt="image" class="home__img">
+            </div>
+        </section>
+
+        <!--========================== Products Features =============================-->
+        <section class="products features" id="products">
             <h2>Products Features</h2>
-            <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+            <p>It is a long established fact that a reader will be of a page when established fact looking at
+                its
+                layout.
+            </p>
+
             <div id="container">
                 <div class="card">
                     <div class="card-header">
@@ -64,7 +122,9 @@
                     </div>
                     <div class="card-text">
                         <h3>Digital Design</h3>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card the platform.</p>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card the
+                            platform.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
@@ -78,7 +138,9 @@
                     </div>
                     <div class="card-text">
                         <h3>Unlimited Colors</h3>
-                        <p>Credibly brand stanaads compliant user exteible services College Anibh ocean euismod tincidunt laoreet.</p>
+                        <p>Credibly brand stanaads compliant user exteible services College Anibh ocean euismod
+                            tincidunt
+                            laoreet.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -92,30 +154,30 @@
                     </div>
                     <div class="card-text">
                         <h3>Strategy Solutions</h3>
-                        <p>Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</p>
+                        <p>Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean
+                            regelialia.</p>
                     </div>
-                </div>       
+                </div>
             </div>
             <h2>How It Works ?</h2>
-            <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-        </div>
-        </main>
-        
-        <!--=============================================================-->
-        <!--========================== FOOTER ===========================-->
-        <!--=============================================================-->
+            <p>It is a long established fact that a reader will be of a page when established fact looking at its
+                layout.
+            </p>
+            </div>
+    </main>
+
+    <!--=============================================================-->
+    <!--========================== FOOTER ===========================-->
+    <!--=============================================================-->
 
 
-        <footer class="footer">
-            <p>Ici c'est le footer !</p>
-        </footer>
+    <footer class="footer">
+        <p>Ici c'est le footer !</p>
+    </footer>
 
-        <!--=============================================================-->
-        <!--========================== SCROLL UP ========================-->
-        <!--=============================================================-->
-
-
-        <script src=""></script>
-    </div>
+    <!--=============================================================-->
+    <!--========================== SCROLL UP ========================-->
+    <!--=============================================================-->
 </body>
+
 </html>
