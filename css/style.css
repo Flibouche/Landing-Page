@@ -100,7 +100,7 @@ html {
 /* ===================== Home ========================= */
 
 .home {
-    background: radial-gradient(rgb(139, 195, 245, 0.1), #1294b8);
+    background: radial-gradient(rgba(139, 195, 245, 0.1), #1294b8);
 }
 
 .home__container {
@@ -127,13 +127,31 @@ html {
     padding-bottom: 1rem;
 }
 
-.newsletter {
-    color: red;
-}
-
 .home__img {
     width: 750px;
     flex-wrap: wrap;
+}
+
+.newsletter input {
+    position: relative;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.newsletter span {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    place-items: center;
+    top: 0;
+    border-radius: 2rem;
+    padding: 10px 15px 10px 15px;
+}
+
+.newsletter span:hover {
+    
 }
 
 /* ===================== Products Features ========================= */
@@ -157,11 +175,6 @@ html {
     font-size: 1.3rem;
     color: grey;
     margin-bottom: 50px;
-}
-
-#test {
-    display: flex;
-    align-items: center;
 }
 
 .products__content {
@@ -206,3 +219,19 @@ html {
     padding-right: 20px;
     margin-bottom: 70px;
 }
+
+/* ===================== How It Works ? ========================= */
+
+.works {
+    background-color: rgba(169, 169, 169, 0.5);
+}
+
+/* ===================== Team ========================= */
+
+/* ===================== Parallax ========================= */
+
+/* ===================== Blog ========================= */
+
+/* ===================== Pricing ========================= */
+
+/* ===================== Footer  ========================= */
