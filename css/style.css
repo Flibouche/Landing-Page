@@ -420,6 +420,29 @@ body {
     transform: translateY(-5px);
 }
 
+/* ===================== Client ========================= */
+
+.client__container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.client__description {
+    padding-bottom: 50px;
+}
+
+.client__logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.client__logo img {
+    opacity: 50%;
+    width: 125px;
+}
+
 /* ===================== Blog ========================= */
 
 .blog__container {
