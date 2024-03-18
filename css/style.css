@@ -452,7 +452,7 @@ body {
     margin-top: 100px;
     column-gap: 10%;
     justify-content: center;
-    text-align: ;
+    text-align: left;
 }
 
 .pricing1__data {
@@ -472,9 +472,19 @@ body {
     background-color: gray;
 }
 
+.pricing2__container {
+    justify-content: center;
+    text-align: center;
+}
+
 .pricing2__price {
     width: 100%;
     height: 100%;
+}
+
+.pricing__card {
+    display: flex;
+    justify-content: space-between;
 }
 
 
