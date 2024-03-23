@@ -101,7 +101,7 @@ body {
 }
 
 .nav__menu {
-    display: flex;  
+    display: flex;
 }
 
 .nav__list {
@@ -127,7 +127,7 @@ body {
     align-items: center;
 }
 
-.nav__socialmedia i{
+.nav__socialmedia i {
     transition: 1s;
 }
 
@@ -228,7 +228,7 @@ body {
     width: 425px;
     border-radius: 10px;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     align-items: center;
     transition: 1s;
 }
@@ -256,7 +256,7 @@ body {
 /* ===================== How It Works ? ========================= */
 
 #works {
-    background-color: rgba(169, 169, 169, 0.5);
+    background-color: lightgray;
 }
 
 .works__container {
@@ -280,7 +280,7 @@ body {
 
 .team__card-title {
     padding-top: 50px;
-    margin-bottom : -7px;
+    margin-bottom: -7px;
 }
 
 .team__card-portrait {
@@ -321,7 +321,7 @@ body {
     border-radius: 100px;
     top: 0px;
     left: -45px;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 .team__card-portrait:hover .facebook {
@@ -340,7 +340,7 @@ body {
     border-radius: 100px;
     top: 50px;
     left: -45px;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 .team__card-portrait:hover .twitter {
@@ -359,7 +359,7 @@ body {
     border-radius: 100px;
     top: 100px;
     left: -45px;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 .team__card-portrait:hover .skype {
@@ -422,7 +422,7 @@ body {
 /* ===================== Client ========================= */
 
 .client {
-    background-color: rgba(169, 169, 169, 0.5);
+    background-color: lightgray;
 }
 
 .client__container {
@@ -449,7 +449,9 @@ body {
 /* ===================== Pricing ========================= */
 
 .pricing1__container {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
     column-gap: 10%;
     justify-content: center;
     text-align: left;
@@ -460,16 +462,35 @@ body {
     column-gap: 200px;
 }
 
+.pricing1__data img {
+    width: 600px;
+    height: 100%;
+}
+
 .pricing1__description {
     padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 .pricing1__info {
-    display: block;
+    display: flex;
+    gap: 100px;
+    font-size: large;
+    padding-bottom: 35px;
+}
+
+.pricing1__button {
+    border: none;
+    color: #fff;
+    background: #1294b8;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: large;
 }
 
 #pricing2 {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .pricing2__container {
@@ -477,16 +498,107 @@ body {
     text-align: center;
 }
 
-.pricing2__price {
-    width: 100%;
-    height: 100%;
+.pricing__content {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
 }
 
 .pricing__card {
-    display: flex;
-    justify-content: space-between;
+    width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 25px;
+    padding: 0px 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.pricing__card-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pricing__card-price {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.pricing__card-price sup {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1294b8;
+}
+
+.pricing__card-price h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #1294b8;
+}
+
+.pricing__card-price p {
+    font-size: 13px;
+    color: gray;
+}
+
+.pricing__card-adventages {
+    padding-bottom: 20px;
+}
+
+.pricing__card-adventages-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 0px;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.p__data {
+    flex: 1;
+    text-align: right;
+}
+
+.pricing2__button {
+    border: none;
+    color: #fff;
+    background: #1294b8;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#pcard2 {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+#pricing__card-sales {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1294b8;
+    color: white;
+    width: 70px;
+    border-radius: 0 0 0 12px;
+}
+
+#pricing__card-sales p {
+    line-height: 17px;
+    padding: 20px 10px 20px 10px;
+}
 
 /* ===================== Blog ========================= */
 
@@ -559,3 +671,32 @@ body {
 }
 
 /* ===================== Footer  ========================= */
+
+.footer {
+    background-color: grey;
+    padding-block: 4rem 2rem;
+}
+
+.footer__container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+.footer__logo i {
+    border:1px solid white;    
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+
+.footer__description {
+    gap: 25px;
+}
