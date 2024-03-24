@@ -12,7 +12,27 @@
     --h2-font-size: 2.5rem;
 }
 
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
 
+    25% {
+        transform: translateX(5px)
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
 
 /* ==================================================== */
 /* ====================== BASE ======================== */
@@ -37,21 +57,10 @@ body {
     overflow-y: scroll;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
 
 /* ==================================================== */
 /* ============== REUSABLE CSS CLASSES ================ */
@@ -151,6 +160,21 @@ a:active {
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(228, 24%, 6%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right .4s;
+    }
+}
+
 /* ==================================================== */
 /* ===================== MAIN ========================= */
 /* ==================================================== */
@@ -214,7 +238,7 @@ a:active {
     transition: .5s;
 }
 
-.newsletter__button:hover{
+.newsletter__button:hover {
     opacity: 65%;
 }
 
@@ -465,6 +489,11 @@ a:active {
 .client__logo img {
     opacity: 50%;
     width: 125px;
+    transition: .5s;
+}
+
+.client__logo img:hover {
+    opacity: 100%;
 }
 
 /* ===================== Pricing ========================= */
@@ -600,6 +629,10 @@ a:active {
     width: 100%;
 }
 
+.pricing2__button:hover {
+    animation: horizontal-shaking .35s infinite;
+}
+
 #pcard2 {
     position: relative;
     margin-top: 2px;
@@ -729,7 +762,6 @@ a:active {
     display: flex;
     justify-content: center;
     gap: 35px;
-    text-decoration: none;
 }
 
 /* ===================== Scroll Up ========================= */
@@ -755,3 +787,110 @@ a:active {
 .show-scroll {
     bottom: 3rem;
 }
+
+/* ==================================================== */
+/* ================== RESPONSIVE ====================== */
+/* ==================================================== */
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+
+    .home__container {
+        display: grid;
+        justify-items: center;
+    }
+    
+    .home img {
+        padding-top: 100px;
+        width: 400px;
+    }
+
+    .team__content {
+        display: grid;
+        grid-template-columns: 150px 150px;
+    }
+    
+    .parallax__container {
+        height: 800px;
+    }
+    
+    .client__logo {
+        display: grid;
+        grid-template-columns: 150px 150px;
+    }
+    
+    .pricing1__data {
+        display: grid;
+        grid-template-columns: 150px;
+        justify-items: center;
+    }
+
+    .pricing1__data img {
+        padding-top: 100px;
+        width: 350px;
+    }
+
+    .pricing__content {
+        display: grid;
+        justify-items: center;
+    }
+
+    .blog__content {
+        display: grid;
+        justify-items: center;
+    }
+
+    .footer__logo {
+        display: grid;
+        grid-template-columns: 50px 50px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer__description {
+
+    }
+
+}
+
+
+
+/* 
+@media screen and (max-width: 1024px) {
+    .home__container,
+    .new__container,
+    .care__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    } */
+
+/* 
+.container {
+    margin-inline: 1rem;
+}
+
+.home__title {
+    font-size: 2rem;
+}
+
+.home__buttons {
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.shop__container {
+    grid-template-columns: 160px;
+    justify-content: center;
+}
+
+.footer__content {
+    grid-template-columns: max-content;
+}
+} */
