@@ -10,6 +10,10 @@
 
 :root {
     --h2-font-size: 2.5rem;
+    --blue-color: #1294b8;
+    --lightblue-color: #EDF9FD;
+    --darkblue-color: #062C37;
+    --gradientblue-color: radial-gradient(rgba(139, 195, 245, 0.1), #1294b8);
 }
 
 @keyframes horizontal-shaking {
@@ -59,7 +63,6 @@ a {
     text-decoration: none;
 }
 
-
 /* ==================================================== */
 /* ============== REUSABLE CSS CLASSES ================ */
 /* ==================================================== */
@@ -99,8 +102,12 @@ a {
 /* ==================================================== */
 
 .header {
+    position: fixed;
+    background-color: hsla(193, 80%, 12%, 0.2);
+    backdrop-filter: blur(16px);
     width: 100%;
-    height: 0;
+    height: 100px;
+    z-index: 100;
 }
 
 .nav {
@@ -141,7 +148,7 @@ a {
 }
 
 .nav__link:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--darkblue-color);
 }
 
 .nav__socialmedia {
@@ -150,12 +157,16 @@ a {
     align-items: center;
 }
 
+.nav__socialmedia a {
+    color: white;
+}
+
 .nav__socialmedia i {
     transition: 1s;
 }
 
 .nav__socialmedia i:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--darkblue-color);
 }
 
 @media screen and (min-width: 1280px) {
@@ -178,9 +189,10 @@ a {
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         width: 80%;
-        height: 100%;
+        height: 5000px;
         padding: 6rem 3rem 0;
         transition: right .4s;
+        z-index: 100;
     }
 
     .nav__list {
@@ -200,11 +212,15 @@ a {
 }
 
 .nav__close:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .show-menu {
     right: 0;
+}
+
+.active-link {
+    color: var(--darkblue-color);
 }
 
 /* ==================================================== */
@@ -214,7 +230,7 @@ a {
 /* ===================== Home ========================= */
 
 #home {
-    background: radial-gradient(rgba(139, 195, 245, 0.1), #1294b8);
+    background: var(--gradientblue-color);
 }
 
 .home__container {
@@ -249,7 +265,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 5px 5px 5px 10px;
-    background: #fff;
+    background: white;
     border-radius: 20px;
     gap: 5px;
 }
@@ -263,7 +279,7 @@ a {
 .newsletter__button {
     border: none;
     color: #fff;
-    background: #1294b8;
+    background: var(--blue-color);
     cursor: pointer;
     padding: 7px 20px;
     border-radius: 20px;
@@ -285,7 +301,6 @@ a {
 }
 
 .products__description {
-    color: grey;
     margin-bottom: 50px;
 }
 
@@ -300,10 +315,10 @@ a {
 }
 
 .products__card {
-    background: radial-gradient(rgb(139, 195, 245, 1), #1294b8);
+    background: var(--gradientblue-color);
     width: 425px;
     border-radius: 10px;
-    color: white;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     align-items: center;
     transition: 1s;
@@ -332,7 +347,7 @@ a {
 /* ===================== How It Works ? ========================= */
 
 #works {
-    background-color: lightgray;
+    background-color: var(--lightblue-color);
 }
 
 .works__container {
@@ -498,7 +513,7 @@ a {
 /* ===================== Client ========================= */
 
 .client {
-    background-color: lightgray;
+    background-color: var(--lightblue-color);
 }
 
 .client__container {
@@ -544,7 +559,7 @@ a {
 }
 
 .pricing1__data img {
-    width: 600px;
+    width: 800px;
     height: 600px;
 }
 
@@ -563,15 +578,20 @@ a {
 .pricing1__button {
     border: none;
     color: #fff;
-    background: #1294b8;
-    cursor: pointer;
+    background: var(--blue-color);
     padding: 10px 30px;
     border-radius: 5px;
     font-size: large;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.pricing1__button:hover {
+    opacity: 65%;
 }
 
 #pricing2 {
-    background-color: lightgray;
+    background-color: var(--lightblue-color);
 }
 
 .pricing2__container {
@@ -609,18 +629,18 @@ a {
 .pricing__card-price sup {
     font-size: 25px;
     font-weight: 500;
-    color: #1294b8;
+    color: var(--blue-color);
 }
 
 .pricing__card-price h2 {
     font-size: 50px;
     font-weight: 500;
-    color: #1294b8;
+    color: var(--blue-color);
 }
 
 .pricing__card-price p {
     font-size: 13px;
-    color: gray;
+    color: var(--darkblue-color);
 }
 
 .pricing__card-adventages {
@@ -649,8 +669,8 @@ a {
 
 .pricing2__button {
     border: none;
-    color: #fff;
-    background: #1294b8;
+    color: white;
+    background: var(--blue-color);
     cursor: pointer;
     padding: 10px 30px;
     border-radius: 5px;
@@ -658,10 +678,12 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    transition: .5s;
 }
 
 .pricing2__button:hover {
     animation: horizontal-shaking .35s infinite;
+    opacity: 65%;
 }
 
 #pcard2 {
@@ -674,7 +696,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #1294b8;
+    background-color: var(--blue-color);
     color: white;
     width: 70px;
     border-radius: 0 0 0 12px;
@@ -709,7 +731,7 @@ a {
 .blog__card a {
     text-decoration: none;
     font-weight: 600;
-    color: #1294b8;
+    color: var(--blue-color);
 }
 
 .blog__card img {
@@ -755,10 +777,18 @@ a {
     opacity: 1;
 }
 
+.blog__card a {
+    transition: .5s;
+}
+
+.blog__card a:hover {
+    color: var(--darkblue-color);
+}
+
 /* ===================== Footer ========================= */
 
 .footer {
-    background-color: grey;
+    background-color: var(--darkblue-color);
     padding-block: 4rem 2rem;
 }
 
@@ -789,6 +819,15 @@ a {
     border-radius: 50%;
 }
 
+.footer a {
+    color: white;
+    transition: .5s;
+}
+
+.footer a:hover {
+    color: #1294b8;
+}
+
 .footer__description {
     display: flex;
     justify-content: center;
@@ -801,7 +840,7 @@ a {
     position: fixed;
     right: 3rem;
     bottom: -50%;
-    background-color: black;
+    background-color: var(--blue-color);
     color: white;
     border-radius: 50%;
     display: inline-flex;
@@ -845,7 +884,7 @@ a {
     .pricing1__data {
         display: grid;
         justify-items: center;
-    }    
+    }
 
     .pricing1__data img {
         padding-top: 100px;
@@ -917,7 +956,7 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-    
+
     .container {
         margin-inline: 1rem;
     }
