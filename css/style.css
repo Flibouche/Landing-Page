@@ -103,7 +103,7 @@ a {
 
 .header {
     position: fixed;
-    background-color: hsla(193, 80%, 12%, 0.2);
+    background-color: hsla(193, 80%, 12%, 0.5);
     backdrop-filter: blur(16px);
     width: 100%;
     height: 100px;
@@ -185,7 +185,7 @@ a {
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: hsla(228, 24%, 6%, .2);
+        background-color: hsla(193, 80%, 12%, 0.7);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         width: 80%;
@@ -220,7 +220,7 @@ a {
 }
 
 .active-link {
-    color: var(--darkblue-color);
+    color: var(--blue-color);
 }
 
 /* ==================================================== */
@@ -279,7 +279,7 @@ a {
 .newsletter__button {
     border: none;
     color: #fff;
-    background: var(--blue-color);
+    background: var(--darkblue-color);
     cursor: pointer;
     padding: 7px 20px;
     border-radius: 20px;
@@ -461,7 +461,7 @@ a {
 /* ===================== Parallax ========================= */
 
 #parallax {
-    background: url("../img/parallax.png");
+    background: url("../img/parallax.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -560,7 +560,7 @@ a {
 
 .pricing1__data img {
     width: 800px;
-    height: 600px;
+    height: 725px;
 }
 
 .pricing1__description {
@@ -578,7 +578,7 @@ a {
 .pricing1__button {
     border: none;
     color: #fff;
-    background: var(--blue-color);
+    background: var(--darkblue-color);
     padding: 10px 30px;
     border-radius: 5px;
     font-size: large;
@@ -590,7 +590,7 @@ a {
     opacity: 65%;
 }
 
-#pricing2 {
+.pricing2 {
     background-color: var(--lightblue-color);
 }
 
@@ -629,13 +629,13 @@ a {
 .pricing__card-price sup {
     font-size: 25px;
     font-weight: 500;
-    color: var(--blue-color);
+    color: var(--darkblue-color);
 }
 
 .pricing__card-price h2 {
     font-size: 50px;
     font-weight: 500;
-    color: var(--blue-color);
+    color: var(--darkblue-color);
 }
 
 .pricing__card-price p {
@@ -670,7 +670,7 @@ a {
 .pricing2__button {
     border: none;
     color: white;
-    background: var(--blue-color);
+    background: var(--darkblue-color);
     cursor: pointer;
     padding: 10px 30px;
     border-radius: 5px;
@@ -696,7 +696,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--blue-color);
+    background-color: var(--darkblue-color);
     color: white;
     width: 70px;
     border-radius: 0 0 0 12px;
@@ -731,7 +731,7 @@ a {
 .blog__card a {
     text-decoration: none;
     font-weight: 600;
-    color: var(--blue-color);
+    color: var(--darkblue-color);
 }
 
 .blog__card img {
